@@ -36,7 +36,7 @@
         const crypto = urlParams.get('crypto');
         if (crypto) {
             const iframe = document.getElementById('tradingview-chart');
-            iframe.src = `https://www.tradingview.com/symbols/${crypto.toUpperCase()}USD/`;
+            iframe.src = `https://www.tradingview.com/chart/?symbol=${crypto}`;
         } else {
             document.querySelector('.container').innerHTML = '<h1>Invalid cryptocurrency</h1>';
         }
